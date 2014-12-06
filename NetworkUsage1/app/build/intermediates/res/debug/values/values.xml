@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/John/AndroidStudioProjects/NetworkUsage1/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="listArray">
+        <item>Only when on Wi-Fi</item>
+        <item>On any network</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>Wi-Fi</item>
+        <item>Any</item>
+    </string-array>
+    <!-- From: file:/C:/Users/John/AndroidStudioProjects/NetworkUsage1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">NetworkUsage</string>
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="lost_connection">Lost connection.</string>
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="updated">Last updated:</string>
+    <string name="wifi_connected">Wi-Fi reconnected.</string>
+    <string name="xml_error">Error parsing XML.</string>
+</resources>

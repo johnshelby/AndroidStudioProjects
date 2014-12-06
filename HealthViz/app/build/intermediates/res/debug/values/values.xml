@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/John/AndroidStudioProjects/HealthViz/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="viewPager" type="id"/>
+    <!-- From: file:/C:/Users/John/AndroidStudioProjects/HealthViz/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <string name="app_name">HealthViz</string>
+    <string name="ccd_not_found">CCD file not found</string>
+    <string name="date_picker_title">Date of crime:</string>
+    <string name="days">days</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="months">months</string>
+    <string name="new_patient">New Patient</string>
+    <string name="patient_address_label">Street address</string>
+    <string name="patient_age_label">Age</string>
+    <string name="patient_alerts_label">Allergies, Adverse Reactions, Alerts</string>
+    <string name="patient_birthDate_label">Birth date</string>
+    <string name="patient_city_label">City</string>
+    <string name="patient_country_label">Country</string>
+    <string name="patient_ethnicGroup_label">Ethnic group</string>
+    <string name="patient_gender_label">Gender</string>
+    <string name="patient_maritalStatus_label">Marital status</string>
+    <string name="patient_name_label">Name</string>
+    <string name="patient_personal_label">Personal information</string>
+    <string name="patient_postalCode_label">Postal code</string>
+    <string name="patient_race_label">Race</string>
+    <string name="patient_religiousAffiliation_label">Religious affiliation</string>
+    <string name="patient_state_label">State</string>
+    <string name="patient_title_label">Patient</string>
+    <string name="patients_title">Patients</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="subtitle">Sometimes tolerance is not a virtue.</string>
+    <string name="years">years</string>
+    <!-- From: file:/C:/Users/John/AndroidStudioProjects/HealthViz/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="SectionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/button_shape</item>
+    </style>
+</resources>

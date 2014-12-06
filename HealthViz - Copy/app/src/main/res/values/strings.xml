@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HealthViz</string>
+    <string name="crime_title_hint">Enter a title for this crime.</string>
+    <string name="patient_title_label">Patient</string>
+    <string name="patient_personal_label">Personal information</string>
+    <string name="crime_solved_label">Solved?</string>
+    <string name="date_picker_title">Date of crime:</string>
+    <string name="patients_title">Patients</string>
+    <string name="new_patient">New Patient</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle">Sometimes tolerance is not a virtue.</string>
+    <string name="ccd_not_found">CCD file not found</string>
+
+    <string name="patient_gender_label">Gender</string>
+    <string name="patient_birthDate_label">Birth date</string>
+    <string name="patient_address_label">Street address</string>
+    <string name="patient_city_label">City</string>
+    <string name="patient_state_label">State</string>
+    <string name="patient_postalCode_label">Postal code</string>
+</resources>

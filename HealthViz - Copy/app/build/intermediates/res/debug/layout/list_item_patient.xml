@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/patient_list_item_solvedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:focusable="false"
+        android:padding="4dp" />
+    <TextView
+        android:id="@+id/patient_list_item_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/patient_list_item_solvedCheckBox"
+        android:textStyle="bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Patient title" />
+    <TextView
+        android:id="@+id/patient_list_item_xmlTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patient_list_item_titleTextView"
+        android:layout_toLeftOf="@id/patient_list_item_solvedCheckBox"
+        android:paddingLeft="12dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="XML file name" />
+    <TextView
+        android:id="@+id/patient_list_item_dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patient_list_item_xmlTextView"
+        android:layout_toLeftOf="@id/patient_list_item_solvedCheckBox"
+        android:paddingLeft="12dp"
+        android:paddingRight="4dp"
+        android:text="Patient date" />
+</RelativeLayout>
+
+
+<!-- From: file:/C:/Users/John/AndroidStudioProjects/HealthViz/app/src/main/res/layout/list_item_patient.xml -->

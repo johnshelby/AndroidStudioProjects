@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_title_label"
+        style="?android:listSeparatorTextViewStyle"
+    />
+
+    <EditText
+        android:id="@+id/crime_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/crime_title_hint"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_personal_label"
+        style="?android:listSeparatorTextViewStyle"
+    />
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="@string/patient_gender_label" />
+            <TextView
+                android:id="@+id/patient_gender"
+                android:gravity="start"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/patient_birthDate_label" />
+            <TextView
+                android:id="@+id/patient_birthDate"
+                android:gravity="start"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/patient_address_label" />
+            <TextView
+                android:id="@+id/patient_streetAddress"
+                android:gravity="start"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/patient_city_label" />
+            <TextView
+                android:id="@+id/patient_city"
+                android:gravity="start"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/patient_state_label" />
+            <TextView
+                android:id="@+id/patient_state"
+                android:gravity="start"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/patient_postalCode_label" />
+            <TextView
+                android:id="@+id/patient_postalCode"
+                android:gravity="start"
+                android:padding="3dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/crime_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+    />
+    <CheckBox
+        android:id="@+id/crime_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/crime_solved_label"
+    />
+</LinearLayout>
+
+
+
