@@ -38,7 +38,7 @@ public class PersonalFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPatient = new Patient();
+        //mPatient = new Patient();
         UUID patientId = (UUID)getArguments().getSerializable(PatientFragment.EXTRA_PATIENT_ID);
         mPatient = PatientLab.get(getActivity()).getPatient(patientId);
         mPatient.parseCCD(PatientFragment.CCD_PERSONAL);

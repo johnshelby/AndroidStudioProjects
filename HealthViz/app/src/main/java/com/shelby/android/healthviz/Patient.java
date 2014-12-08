@@ -59,6 +59,14 @@ public class Patient {
         mId = UUID.randomUUID();
         mDate = new Date();
         mPatientAlerts = new ArrayList<PatientAlerts>();
+    }
+
+    public Patient(Context appContext) {
+        mId = UUID.randomUUID();
+        mDate = new Date();
+        mContext = appContext;
+
+        mPatientAlerts = new ArrayList<PatientAlerts>();
         Log.d(TAG, "Patient alerts size is: " + mPatientAlerts.size());
         // create some bogus alerts
         PatientAlerts a1 = new PatientAlerts("Penicillin");
@@ -68,12 +76,6 @@ public class Patient {
         PatientAlerts a3 = new PatientAlerts("Codeine");
         mPatientAlerts.add(a3);
         Log.d(TAG, "Patient alerts size is: " + mPatientAlerts.size());
-    }
-
-    public Patient(Context appContext) {
-        mId = UUID.randomUUID();
-        mDate = new Date();
-        mContext = appContext;
     }
 
     @Override
@@ -537,17 +539,17 @@ public class Patient {
                 if (name.equals("name")) {
                     readPatientName(parser);
                 } else if (name.equals("administrativeGenderCode")) {
-                    setGenderCode(readGender(parser));
+                    mGenderCode = readGender(parser);
                 } else if (name.equals("maritalStatusCode")) {
-                    setMaritalStatusCode(readMarital(parser));
+                    mMaritalStatusCode = readMarital(parser);
                 } else if (name.equals("raceCode")) {
-                    setRaceCode(readRaceCode(parser));
+                    mRaceCode = readRaceCode(parser);
                 } else if (name.equals("ethnicGroupCode")) {
-                    setEthnicGroupCode(readEthnicGroupCode(parser));
+                    mEthnicGroupCode = readEthnicGroupCode(parser);
                 } else if (name.equals("religiousAffiliationCode")) {
-                    setReligiousAffiliationCode(readReligiousAffiliationCode(parser));
+                    mReligiousAffiliationCode = readReligiousAffiliationCode(parser);
                 } else if (name.equals("birthTime")) {
-                    setBirthDate(readBirthTime(parser));
+                    mBirthDate = readBirthTime(parser);
                 } else {
                     skip(parser);
                 }
@@ -564,9 +566,9 @@ public class Patient {
                 }
                 String name = parser.getName();
                 if (name.equals("given")) {
-                    setGiven(readGiven(parser));
+                    mGiven = readGiven(parser);
                 } else if (name.equals("family")) {
-                    setFamily(readFamily(parser));
+                    mFamily = readFamily(parser);
                 } else {
                     skip(parser);
                 }
@@ -698,7 +700,7 @@ public class Patient {
             if (tag.equals("addr")) {
                 String u = parser.getAttributeValue(null, "use");
                 Log.d(TAG, "Address use: " + u);
-                setAddrUse(u);
+                mAddrUse = u;
             }
             while (parser.next() != XmlPullParser.END_TAG) {
                 if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -708,15 +710,15 @@ public class Patient {
                 Log.d(TAG, name);
                 // Look for nested tags in patient
                 if (name.equals("streetAddressLine")) {
-                    setStreetAddress(readPatientStreetAddress(parser));
+                    mStreetAddress = readPatientStreetAddress(parser);
                 } else if (name.equals("city")) {
-                    setCity(readPatientCity(parser));
+                    mCity = readPatientCity(parser);
                 } else if (name.equals("state")) {
-                    setState(readPatientState(parser));
+                    mState = readPatientState(parser);
                 } else if (name.equals("postalCode")) {
-                    setPostalCode(readPatientPostalCode(parser));
+                    mPostalCode = readPatientPostalCode(parser);
                 } else if (name.equals("country")) {
-                    setCountry(readPatientCountry(parser));
+                    mCountry = readPatientCountry(parser);
                 } else {
                     skip(parser);
                 }

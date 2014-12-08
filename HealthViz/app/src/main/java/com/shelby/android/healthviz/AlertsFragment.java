@@ -5,6 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -18,7 +22,7 @@ public class AlertsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPatient = new Patient();
+        //mPatient = new Patient();
         UUID patientId = (UUID)getArguments().getSerializable(PatientFragment.EXTRA_PATIENT_ID);
         mPatient = PatientLab.get(getActivity()).getPatient(patientId);
         mPatient.parseCCD(PatientFragment.CCD_ALERTS);
@@ -31,11 +35,26 @@ public class AlertsFragment extends Fragment {
         ArrayList<PatientAlerts> mPatientAlerts = mPatient.getPatientAlerts();
 
         if (mPatientAlerts == null) {
-
+            // no patient alerts
+            Toast.makeText(getActivity(), "No patient alerts", Toast.LENGTH_SHORT).show();
         }
         else {
+            TableLayout tl = (TableLayout)v.findViewById(R.id.patient_alerts_table);
+            int i = 0;
             for (PatientAlerts p : mPatientAlerts) {
+                TableRow row = new TableRow(getActivity());
 
+                row.setId(100 + i);
+                row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+                // Make TV to hold the details
+                TextView detailstv = new TextView(getActivity());
+                detailstv.setId(200 + i);
+                detailstv.setText(p.getSubstance());
+                row.addView(detailstv);
+
+                tl.addView(row, new TableLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+                i++;
             }
         }
 
