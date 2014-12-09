@@ -1,0 +1,2 @@
+C:\Users\John\AndroidStudioProjects\HealthViz\app\build\intermediates\classes\debug
+C:\Users\John\AndroidStudioProjects\HealthViz\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-0625b3628345e9f21313849cdd3c164070af9eb6.jar
