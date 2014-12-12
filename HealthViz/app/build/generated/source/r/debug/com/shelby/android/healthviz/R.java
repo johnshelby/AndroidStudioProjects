@@ -19,12 +19,12 @@ public final class R {
     }
     public static final class id {
         public static final int alertsSection_button=0x7f050004;
-        public static final int crime_title=0x7f05000a;
+        public static final int crime_title=0x7f050009;
         public static final int dialog_date_datePicker=0x7f050002;
         public static final int fragmentAlerts=0x7f050003;
         public static final int fragmentContainer=0x7f050001;
-        public static final int fragmentPatient=0x7f050008;
-        public static final int fragmentPersonal=0x7f05000b;
+        public static final int fragmentPatient=0x7f050007;
+        public static final int fragmentPersonal=0x7f05000a;
         public static final int menu_item_new_crime=0x7f05002a;
         public static final int menu_item_show_subtitle=0x7f05002b;
         public static final int patient_address_label=0x7f050014;
@@ -47,7 +47,7 @@ public final class R {
         public static final int patient_list_item_xmlTextView=0x7f050028;
         public static final int patient_maritalStatus=0x7f050023;
         public static final int patient_maritalStatus_label=0x7f050022;
-        public static final int patient_name=0x7f050006;
+        public static final int patient_name=0x7f05000d;
         public static final int patient_postalCode=0x7f05001d;
         public static final int patient_postalCode_label=0x7f05001c;
         public static final int patient_race=0x7f05001f;
@@ -57,10 +57,10 @@ public final class R {
         public static final int patient_state=0x7f050019;
         public static final int patient_state_label=0x7f050018;
         public static final int patient_streetAddress=0x7f050015;
-        public static final int patient_title=0x7f050009;
-        public static final int personalSection_button=0x7f05000c;
-        public static final int personalSection_layout=0x7f05000d;
-        public static final int scrollView=0x7f050007;
+        public static final int patient_title=0x7f050008;
+        public static final int personalSection_button=0x7f05000b;
+        public static final int personalSection_layout=0x7f05000c;
+        public static final int scrollView=0x7f050006;
         public static final int viewPager=0x7f050000;
     }
     public static final class layout {
@@ -114,9 +114,12 @@ public final class R {
         public static final int patient_state_label=0x7f070015;
         public static final int patient_title_label=0x7f070016;
         public static final int patients_title=0x7f070017;
-        public static final int show_subtitle=0x7f070018;
-        public static final int subtitle=0x7f070019;
-        public static final int years=0x7f07001a;
+        public static final int reaction_label=0x7f070018;
+        public static final int severity_label=0x7f070019;
+        public static final int show_subtitle=0x7f07001a;
+        public static final int substance_label=0x7f07001b;
+        public static final int subtitle=0x7f07001c;
+        public static final int years=0x7f07001d;
     }
     public static final class style {
         public static final int AppTheme=0x7f080000;

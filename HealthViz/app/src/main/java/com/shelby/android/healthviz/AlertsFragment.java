@@ -1,5 +1,6 @@
 package com.shelby.android.healthviz;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -44,14 +45,31 @@ public class AlertsFragment extends Fragment {
             for (PatientAlerts p : mPatientAlerts) {
                 TableRow row = new TableRow(getActivity());
 
+                if (i % 2 == 0) {
+                    row.setBackgroundColor(Color.LTGRAY);
+                }
+
                 row.setId(100 + i);
                 row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                // Make TV to hold the details
-                TextView detailstv = new TextView(getActivity());
-                detailstv.setId(200 + i);
-                detailstv.setText(p.getSubstance());
-                row.addView(detailstv);
+                // Make TextView to hold the substance
+                TextView substanceField = new TextView(getActivity());
+                substanceField.setId(200 + i);
+                substanceField.setText(p.getSubstance());
+
+                row.addView(substanceField);
+
+                // Make TextView to hold the reaction
+                TextView reactionField = new TextView(getActivity());
+                reactionField.setId(300 + i);
+                reactionField.setText(p.getReaction());
+                row.addView(reactionField);
+
+                // Make TextView to hold the severity
+                TextView severityField = new TextView(getActivity());
+                severityField.setId(400 + i);
+                severityField.setText(p.getSeverity());
+                row.addView(severityField);
 
                 tl.addView(row, new TableLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
                 i++;

@@ -70,10 +70,16 @@ public class Patient {
         Log.d(TAG, "Patient alerts size is: " + mPatientAlerts.size());
         // create some bogus alerts
         PatientAlerts a1 = new PatientAlerts("Penicillin");
+        a1.setReaction("Hives");
+        a1.setSeverity("Moderate to severe");
         mPatientAlerts.add(a1);
         PatientAlerts a2 = new PatientAlerts("Aspirin");
+        a2.setReaction("Wheezing");
+        a2.setSeverity("Moderate to severe");
         mPatientAlerts.add(a2);
         PatientAlerts a3 = new PatientAlerts("Codeine");
+        a3.setReaction("Nausea");
+        a3.setSeverity("Severe");
         mPatientAlerts.add(a3);
         Log.d(TAG, "Patient alerts size is: " + mPatientAlerts.size());
     }

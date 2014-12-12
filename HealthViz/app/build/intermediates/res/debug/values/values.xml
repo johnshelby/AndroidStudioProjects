@@ -41,7 +41,10 @@
     <string name="patient_state_label">State</string>
     <string name="patient_title_label">Patient</string>
     <string name="patients_title">Patients</string>
+    <string name="reaction_label">Reaction</string>
+    <string name="severity_label">Severity</string>
     <string name="show_subtitle">Show Subtitle</string>
+    <string name="substance_label">Substance</string>
     <string name="subtitle">Sometimes tolerance is not a virtue.</string>
     <string name="years">years</string>
     <!-- From: file:/C:/Users/John/AndroidStudioProjects/HealthViz/app/src/main/res/values/styles.xml -->

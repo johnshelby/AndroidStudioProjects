@@ -30,6 +30,9 @@
     <string name="patient_postalCode_label">Postal code</string>
 
     <string name="patient_alerts_label">Allergies, Adverse Reactions, Alerts</string>
+    <string name="substance_label">Substance</string>
+    <string name="reaction_label">Reaction</string>
+    <string name="severity_label">Severity</string>
 
     <plurals name="years">
         <item quantity="one">%d year</item>
